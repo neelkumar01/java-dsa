@@ -22,7 +22,11 @@ public class T1 {
         int end = array.length - 1;
 
         while (start <= end) { 
-            int middle = start + (end - start)/2 ;      // index of mid elem
+            int middle = start + (end - start)/2 ;      // index of middle element
+
+            if (array[middle] == target) {
+                return middle;
+            }
 
             if (target < array[middle]) {               
                 end = middle - 1;
