@@ -15,7 +15,7 @@ public class T2 {
         int start = 0;
         int end = array.length - 1;
 
-        // find whether array is sorted in ascending or descending order
+        // find whether array is sorted in ascending or descending order                        // ❤️
         boolean isAsc = array[start] < array[end];
 
         while (start <= end) {
@@ -34,7 +34,7 @@ public class T2 {
                     return middle;
                 }
             } else {
-                if (target < array[middle]) {
+                if (target > array[middle]) {
                     end = middle - 1;
                 } else if (target < array[middle]) {
                     start = middle + 1;

@@ -9,7 +9,7 @@ public class T1 {
 
     public static void main(String[] args) {
 
-        int[] array = {1,2,3,4,5};
+        int[] array = {1,2,3,5,6,7};
         int target = 4;
         int result = binarySearch(array, target);
 
@@ -36,7 +36,6 @@ public class T1 {
                 return middle;
             }
         }
-
         return -1;
     }
 }
